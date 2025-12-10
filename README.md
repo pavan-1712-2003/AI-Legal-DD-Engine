@@ -15,13 +15,13 @@ It reads the files, finds the risky parts, and tells the human owners exactly wh
 ### 1. The Dashboard (The "Big Picture")
 *Here you can see the total risk score (0 to 100). A low score means the deal is safe. A high score means "Watch out!"*
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+![Dashboard Screenshot]("C:\Users\ADMIN\OneDrive\Pictures(1)\Camera Roll\Screenshot 2025-12-10 132635.png")
 *(Please upload your screenshot here)*
 
 ### 2. The Detailed Report
 *This list shows exactly which file has a problem. For example, it found a "Financial Risk" in the Loan Agreement.*
 
-![Report Screenshot](./screenshots/report.png)
+![Report Screenshot]("C:\Users\ADMIN\OneDrive\Pictures(1)\Camera Roll\Screenshot 2025-12-10 132824.png")
 *(Please upload your screenshot here)*
 
 ---
