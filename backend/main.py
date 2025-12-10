@@ -8,9 +8,11 @@ from analysis_engine import analyze_document
 app = FastAPI()
 
 # Enable CORS for React Frontend
+# Enable CORS for React Frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    # CHANGE THIS LINE BELOW:
+    allow_origins=["*"],  # Allows ALL origins (Vercel, Localhost, etc.)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
