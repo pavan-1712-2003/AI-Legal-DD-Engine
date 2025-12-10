@@ -21,8 +21,8 @@ function App() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' }
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000'; // Uses Render URL or falls back to local dev
+const response = await axios.post(`${API_URL}/analyze`, formData, {
       });
       setData(response.data);
     } catch (error) {
