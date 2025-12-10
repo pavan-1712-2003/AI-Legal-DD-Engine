@@ -21,13 +21,22 @@ function App() {
     }
 
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000'; // Uses Render URL or falls back to local dev
-const response = await axios.post(`${API_URL}/analyze`, formData, {
+      // 1. Define the API URL
+      // If the Vercel variable exists, use it. Otherwise, use localhost.
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+      
+      console.log("Connecting to:", API_URL); // Debugging log
+
+      // 2. Use the variable in the request
+      const response = await axios.post(`${API_URL}/analyze`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
       });
+      
       setData(response.data);
     } catch (error) {
       console.error("Upload error", error);
-      alert("Ensure Backend is running on port 8000");
+      // Update the alert to be more helpful
+      alert("Connection failed! Check console for details. Is Render sleeping?");
     }
     setLoading(false);
   };
