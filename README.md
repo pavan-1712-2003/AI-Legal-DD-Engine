@@ -61,4 +61,4 @@ If you want to test this yourself, follow these steps:
 ### Step 1: Download the Code
 ```bash
 git clone [https://github.com/pavan-1712-2003/AI-Legal-DD-Engine]
-cd AI-Legal-DD-Engine
+cd legal-dd-engine
